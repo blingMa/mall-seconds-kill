@@ -1,0 +1,35 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3306/kill?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.163.com
+    port: 25
+    username: ma_1008611@163.com
+    password: FTGAVZFOTINYROSS
+    default-encoding: utf-8
+
+  rabbitmq:
+    host: 101.201.123.207
+    port: 5672
+    username: admin
+    password: 123456
+
+  redis:
+    host: 101.201.123.207
+    port: 6379
+    database: 0
+    password:
+
